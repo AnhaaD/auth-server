@@ -1,29 +1,46 @@
 {
-  "name": "auth-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anhaaD/auth-server.git"
-  },
-  "author": "anhaaD",
+  "name": "mean-rsvp-auth0",
+  "version": "0.2.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anhaaD/auth-server/issues"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "dev": "concurrently \"ng serve\" \"NODE_ENV=dev node server\"",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "homepage": "https://github.com/anhaaD/auth-server#readme",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "auth0-js": "^9.7.3",
+    "body-parser": "^1.17.1",
+    "core-js": "^2.4.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
     "express-jwt": "^5.3.1",
-    "jwks-rsa": "^1.4.0",
-    "method-override": "^3.0.0",
-    "mongoose": "^5.0.11"
+    "jwks-rsa": "^1.3.0",
+    "method-override": "^2.3.8",
+    "mongoose": "^5.2.0",
+    "rxjs": "^6.2.2",
+    "video.js": "^7.5.4",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "ajv": "^6.1.1",
+    "codelyzer": "4.3.0",
+    "concurrently": "^3.5.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "^5.4.0",
+    "ts-node": "~3.2.0",
+    "tslint": "5.10.0",
+    "typescript": "2.9.2"
   }
 }
